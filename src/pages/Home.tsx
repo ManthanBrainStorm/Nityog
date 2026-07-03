@@ -2,7 +2,7 @@ import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { TrustedBy } from "@/components/sections/TrustedBy";
 import { About } from "@/components/sections/About";
-import { Experiences } from "@/components/sections/Experiences";
+
 import { Programs } from "@/components/sections/Programs";
 import { Gallery } from "@/components/sections/Gallery";
 import { WhyUs } from "@/components/sections/WhyUs";
@@ -19,7 +19,7 @@ export default function Home() {
         <Hero />
         <TrustedBy />
         <About />
-        <Experiences />
+        
         <Programs />
         <Gallery />
         <WhyUs />

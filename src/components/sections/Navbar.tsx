@@ -9,52 +9,103 @@ export function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["Home", "Programs", "Experiences", "About", "Gallery", "Contact"];
+  const navLinks = ["Home", "Programs", "About", "Gallery", "Contact"];
+
+  const whatsappLink =
+    "https://wa.me/919826396009?text=Hi%20Nityog,%20I'm%20interested%20in%20your%20Corporate%20Wellness%20Retreats.";
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? "bg-background/95 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"
-    }`}>
+    <nav
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+        isScrolled
+          ? "bg-background/95 backdrop-blur-md shadow-sm py-4"
+          : "bg-transparent py-7"
+      }`}
+    >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        {/* ── LOGO: swap /logo.jpeg to change the brand image ── */}
-        <a href="#home" className="flex items-center gap-2">
-          <img src="/logo.jpeg" alt="Nityog Logo" className="h-13 w-13 object-contain rounded-full" />
-          <span className="font-serif text-2xl font-semibold tracking-wide text-foreground">Nityog</span>
+        {/* Logo */}
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src="/logo.jpeg"
+            alt="Nityog Logo"
+            className="h-12.5 w-12.5 object-contain rounded-full"
+          />
+
+          <span className="font-serif text-2xl font-semibold tracking-wide text-foreground">
+            Nityog
+          </span>
         </a>
 
-        <div className="hidden md:flex items-center space-x-8">
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center space-x-8.5">
           {navLinks.map((link) => (
-            <a key={link} href={`#${link.toLowerCase()}`}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <a
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              className="text-sm font-medium tracking-wide text-foreground hover:text-primary transition-all duration-300"
+            >
               {link}
             </a>
           ))}
-          <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-6">
-            Let's Connect
-          </Button>
+
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded-full px-6">
+              
+              WhatsApp
+            </Button>
+          </a>
         </div>
 
-        <button className="md:hidden text-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
+      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }} className="md:hidden bg-background border-b border-border overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden bg-background border-b border-border overflow-hidden"
+          >
             <div className="container mx-auto px-6 py-4 flex flex-col space-y-4">
               {navLinks.map((link) => (
-                <a key={link} href={`#${link.toLowerCase()}`} onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-base font-medium text-foreground hover:text-primary transition-colors block py-2">
+                <a
+                  key={link}
+                  href={`#${link.toLowerCase()}`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-base font-medium text-foreground hover:text-primary transition-colors block py-2"
+                >
                   {link}
                 </a>
               ))}
-              <Button className="bg-secondary text-secondary-foreground w-full rounded-full mt-4">Let's Connect</Button>
+
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-secondary text-secondary-foreground w-full rounded-full mt-4">
+                  <MessageCircle size={18} />
+                  WhatsApp
+                </Button>
+              </a>
             </div>
           </motion.div>
         )}

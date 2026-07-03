@@ -72,14 +72,15 @@ export function Hero() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-5">
-            <Button
+           <a href="#contact">
+              <Button 
               size="lg"
               className="rounded-full h-14 px-8 bg-primary hover:bg-primary/90 text-white"
             >
               Get In Touch
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-
+              </Button>
+            </a>
             
           </div>
         </motion.div>
