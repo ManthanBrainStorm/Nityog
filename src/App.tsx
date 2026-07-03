@@ -10,9 +10,13 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+
+        
+
         <Switch>
           <Route path="/" component={Home} />
         </Switch>
+
         <Toaster />
       </TooltipProvider>
     </QueryClientProvider>

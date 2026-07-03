@@ -1,6 +1,10 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -27,13 +31,40 @@ const contactSchema = z.object({
 });
 
 export function Contact() {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
   const form = useForm<z.infer<typeof contactSchema>>({
     resolver: zodResolver(contactSchema),
     defaultValues: { name: "", email: "", company: "", phone: "", message: "" },
   });
 
-  const onSubmit = (_data: z.infer<typeof contactSchema>) => {
-    window.open(CONTACT.googleFormUrl, "_blank");
+  const onSubmit = async (data: z.infer<typeof contactSchema>) => {
+    try {
+      setLoading(true);
+
+      await emailjs.send(
+        "service_4xi6yrb",
+        "template_yeokexb",
+        {
+          name: data.name,
+          email: data.email,
+          company: data.company,
+          phone: data.phone,
+          message: data.message,
+        },
+        "Jj0ypocw2Em5vUx8q"
+      );
+
+      setSuccess(true);
+
+      form.reset();
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      console.error("Failed to send email.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -99,8 +130,26 @@ export function Contact() {
                       <Textarea placeholder="Tell us about your team and goals..." className="min-h-[120px] bg-muted/50 border-transparent focus-visible:ring-primary resize-none" {...field} />
                     </FormControl>
                     <FormMessage /></FormItem>)} />
-                <Button type="submit" className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full text-base">
-                  Send Message
+
+
+                {success && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="flex items-center gap-3 rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-green-700"
+                  >
+                    <CheckCircle2 className="w-5 h-5" />
+                    <span>
+                      Thank you! Your enquiry has been sent successfully. We'll contact you soon.
+                    </span>
+                  </motion.div>
+                )}
+                <Button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full text-base"
+                >
+                  {loading ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </Form>

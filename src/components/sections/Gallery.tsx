@@ -21,7 +21,10 @@ export function Gallery() {
               className="break-inside-avoid relative group rounded-2xl overflow-hidden">
               <img src={src} alt={`Gallery ${i + 1}`}
                 className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t
+from-black/80
+via-black/20
+to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }}

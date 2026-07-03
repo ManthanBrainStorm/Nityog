@@ -102,7 +102,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
               >
                 <Button className="bg-secondary text-secondary-foreground w-full rounded-full mt-4">
-                  <MessageCircle size={18} />
+                  
                   WhatsApp
                 </Button>
               </a>
