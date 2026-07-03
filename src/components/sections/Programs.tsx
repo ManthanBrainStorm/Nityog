@@ -247,7 +247,7 @@ export function Programs() {
                 <div className="relative h-[380px] overflow-hidden">
 
                   <img
-                    src="/images/Events/yogutsav.png"
+                    src="/images/events/yogutsav.png"
                     alt="YogUtsav"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -293,7 +293,7 @@ export function Programs() {
                 <div className="relative h-[380px] overflow-hidden">
 
                   <img
-                    src="/images/Events/meditation.png"
+                    src="/images/events/meditation.png"
                     alt="Meditation Day"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
