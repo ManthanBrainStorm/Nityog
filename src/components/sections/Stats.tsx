@@ -3,9 +3,9 @@ import { motion, useInView } from "framer-motion";
 
 // ── EDIT: update the stats numbers and labels ──
 const stats = [
-  { num: 5000, suffix: "+", label: "Hours Dedicated" },
-  { num: 250,  suffix: "+", label: "Programs Conducted" },
-  { num: 100,  suffix: "+", label: "Organizations Partnered" },
+  { num: 500, suffix: "+", label: "Hours Dedicated" },
+  { num: 25,  suffix: "+", label: "Programs Conducted" },
+  { num: 10,  suffix: "+", label: "Organizations Partnered" },
   { num: 8,    suffix: "+", label: "Years of Experience" },
 ];
 

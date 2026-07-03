@@ -35,6 +35,9 @@ export function Story() {
               <p className="font-serif text-2xl text-foreground">
                 Nitya Soni <span className="text-primary font-sans text-lg ml-2">नित्योग</span>
               </p>
+              <p  className="text-foreground/70 text-lg leading-relaxed mb-8">
+                Credentials: BA & MA in Yoga, 200-Hour Yoga TTC, Certified by YCB (Ministry of AYUSH), Naturopathy, Certified Yoga Therapist. I have worked with 500+ individuals and organizations including Cult.Fit, Indus Towers, Ananta Spa and Resorts, and more.
+              </p>
               <p className="text-sm text-foreground/50 mt-1">Founder, Nityog Studio</p>
             </div>
           </motion.div>

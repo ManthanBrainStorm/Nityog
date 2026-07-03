@@ -8,6 +8,7 @@ const reasons = [
   { title: "Expert Facilitators", desc: "Trained, compassionate & highly experienced practitioners." },
   { title: "On-Site Convenience", desc: "We bring the sanctuary to your workplace, anywhere." },
   { title: "Lasting Impact", desc: "Creating habits for better well-being and enhanced performance." },
+  { title: "PAN India", desc: "Experience the wellness across the     NATION. " },
 ];
 
 export function WhyUs() {

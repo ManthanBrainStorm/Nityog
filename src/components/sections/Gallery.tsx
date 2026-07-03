@@ -7,7 +7,11 @@ const images = [
   "/images/gal3.png",
   "/images/gal4.png",
   "/images/gal5.png",
-];
+  "/images/gal6.png",
+  "/images/gal7.png",
+  "/images/gal8.png",
+  "/images/gal9.png",
+  "/images/gal10.png", ];
 
 export function Gallery() {
   return (
@@ -27,11 +31,7 @@ via-black/20
 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </motion.div>
           ))}
-          <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.5 }}
-            className="break-inside-avoid rounded-2xl bg-secondary/30 aspect-square flex items-center justify-center p-8 text-center">
-            <h3 className="font-serif text-2xl text-primary">Creating space for calm.</h3>
-          </motion.div>
+          
         </div>
       </div>
     </section>
