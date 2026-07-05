@@ -4,28 +4,28 @@ const experiences = [
   {
     title: "Yoga Sessions",
     subtitle: "Flexibility • Recovery",
-    image: "/images/Retreats/yoga.png",
+    image: "/images/Retreats/yoga.webp",
     benefit:
       "Improve posture, flexibility and reduce workplace stress through guided yoga sessions.",
   },
   {
     title: "Breathwork",
     subtitle: "Focus • Calm",
-    image: "/images/Retreats/breathwork.png",
+    image: "/images/Retreats/breathwork.webp",
     benefit:
       "Enhance focus, emotional balance and energy with conscious breathing techniques.",
   },
   {
     title: "Sound Therapy",
     subtitle: "Healing • Relaxation",
-    image: "/images/Retreats/soundtherapy.png",
+    image: "/images/Retreats/soundtherapy.webp",
     benefit:
       "Deep relaxation through healing frequencies that calm the nervous system.",
   },
   {
     title: "Ice Bath",
     subtitle: "Recovery • Resilience",
-    image: "/images/Retreats/icebath.png",
+    image: "/images/Retreats/icebath.webp",
     benefit:
       "Improve resilience, recovery and mental toughness with guided cold exposure.",
   },
@@ -39,14 +39,14 @@ const experiences = [
   {
     title: "Team Building",
     subtitle: "Trust • Collaboration",
-    image: "/images/Retreats/teambuilding.png",
+    image: "/images/Retreats/teambuilding.webp",
     benefit:
       "Meaningful collaborative activities that strengthen trust and communication.",
   },
   {
     title: "Stress Management",
     subtitle: "Resilience • Performance",
-    image: "/images/Retreats/stress.png",
+    image: "/images/Retreats/stress.webp",
     benefit:
       "Practical techniques employees can use every day to reduce stress.",
   },
@@ -119,7 +119,7 @@ export function Programs() {
           <div className="overflow-hidden rounded-[2rem] shadow-xl">
 
             <img
-              src="/images/Retreats/retreat1.png"
+              src="/images/Retreats/retreat1.webp"
               alt="Corporate Retreat"
               className="w-full h-[550px] object-cover hover:scale-105 transition-transform duration-700"
             />
