@@ -162,7 +162,7 @@ export function Programs() {
     no-scrollbar
     cursor-grab
     active:cursor-grabbing
-    scroll-smooth
+    
     px-2
   "
             >
@@ -180,6 +180,10 @@ export function Programs() {
                     <img
                       src={item.image}
                       alt={item.title}
+                      width={300}
+                      height={224}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
 
