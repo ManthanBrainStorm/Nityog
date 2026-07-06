@@ -32,7 +32,7 @@ const experiences = [
   {
     title: "Mindfulness",
     subtitle: "Awareness • Balance",
-    image: "/images/Retreats/mindfulness.png",
+    image: "/images/Retreats/mindfulness.webp",
     benefit:
       "Cultivate awareness and emotional wellbeing through mindfulness practices.",
   },
@@ -247,7 +247,7 @@ export function Programs() {
                 <div className="relative h-[380px] overflow-hidden">
 
                   <img
-                    src="/images/events/yogutsav.png"
+                    src="/images/events/yogutsav.webp"
                     alt="YogUtsav"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
@@ -293,7 +293,7 @@ export function Programs() {
                 <div className="relative h-[380px] overflow-hidden">
 
                   <img
-                    src="/images/events/meditation.png"
+                    src="/images/events/meditation.webp"
                     alt="Meditation Day"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
