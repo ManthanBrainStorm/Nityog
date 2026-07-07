@@ -1,7 +1,7 @@
 // ── EDIT: add or remove company names from the logos array ──
 const logos = [
-  "AYM Yoga School", "INMO", "Cult Gym", "Kendriya Vidhyalaya", "Decathalon", "Radisson Hotel","UD Creation","Kid Foundation International School","Ananta Spa",
-  "AYM Yoga School", "INMO", "Cult Gym", "Kendriya Vidhyalaya", "Decathalon", "Radisson Hotel","UD Creation","Kid Foundation International School","Ananta Spa",
+  "AYM Yoga School", "INMO", "Cult Gym", "Kendriya Vidhyalaya", "Decathalon", "Radisson Hotel","UD Creations","Kid Foundation International School","Ananta Spa","Radisson RED",
+  "AYM Yoga School", "INMO", "Cult Gym", "Kendriya Vidhyalaya", "Decathalon", "Radisson Hotel","UD Creations","Kid Foundation International School","Ananta Spa","Radisson RED",
 ];
 
 export function TrustedBy() {
