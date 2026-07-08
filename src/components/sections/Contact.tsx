@@ -107,21 +107,21 @@ export function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <FormField control={form.control} name="name" render={({ field }) => (
                     <FormItem><FormLabel>Your Name</FormLabel>
-                      <FormControl><Input placeholder="Jane Doe" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
+                      <FormControl><Input placeholder="Manthan" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
                       <FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="email" render={({ field }) => (
                     <FormItem><FormLabel>Work Email</FormLabel>
-                      <FormControl><Input placeholder="jane@company.com" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
+                      <FormControl><Input placeholder="wellness@nityog.in" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
                       <FormMessage /></FormItem>)} />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <FormField control={form.control} name="company" render={({ field }) => (
                     <FormItem><FormLabel>Company Name</FormLabel>
-                      <FormControl><Input placeholder="Acme Corp" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
+                      <FormControl><Input placeholder="Nityog" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
                       <FormMessage /></FormItem>)} />
                   <FormField control={form.control} name="phone" render={({ field }) => (
                     <FormItem><FormLabel>Phone Number</FormLabel>
-                      <FormControl><Input placeholder="+91 98765 43210" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
+                      <FormControl><Input placeholder="98263 96009" className="bg-muted/50 border-transparent focus-visible:ring-primary" {...field} /></FormControl>
                       <FormMessage /></FormItem>)} />
                 </div>
                 <FormField control={form.control} name="message" render={({ field }) => (
