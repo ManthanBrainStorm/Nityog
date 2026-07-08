@@ -10,7 +10,7 @@ export function About() {
             viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="relative">
             {/* ── PHOTO: replace /images/about.png with your own image ── */}
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative">
-              <img src="/images/about.png" alt="Wellness space" className="w-full h-full object-cover" />
+              <img src="/images/about.webp" alt="Wellness space" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-accent/20 rounded-full blur-3xl -z-10" />
           </motion.div>

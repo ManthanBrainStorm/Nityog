@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 
 // ── EDIT: add/remove images from this list. Files must be placed in /public/images/ ──
 const images = [
-  "/images/gal1.png",
-  "/images/gal2.png",
-  "/images/gal3.png",
-  "/images/gal4.png",
-  "/images/gal5.png",
-  "/images/gal6.png",
-  "/images/gal7.png",
-  "/images/gal8.png",
-  "/images/gal9.png",
-  "/images/gal10.png", ];
+  "/images/gal1.webp",
+  "/images/gal2.webp",
+  "/images/gal3.webp",
+  "/images/gal4.webp",
+  "/images/gal5.webp",
+  "/images/gal6.webp",
+  "/images/gal7.webp",
+  "/images/gal8.webp",
+  "/images/gal9.webp",
+  "/images/gal10.webp", ];
 
 export function Gallery() {
   return (

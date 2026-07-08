@@ -10,7 +10,7 @@ export function Story() {
             className="order-2 lg:order-1 relative">
             {/* ── PHOTO: replace /images/story.png with the founder's portrait ── */}
             <div className="aspect-[3/4] rounded-[2rem] overflow-hidden">
-              <img src="/images/story.png" alt="Nitya Soni" className="w-full h-full object-cover" />
+              <img src="/images/story.webp" alt="Nitya Soni" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-accent/20 rounded-full blur-2xl -z-10" />
           </motion.div>
