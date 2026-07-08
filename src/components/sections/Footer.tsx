@@ -31,7 +31,7 @@ export function Footer() {
         </div>
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-primary-foreground/60">
           <p>&copy; 2026 Nityog. All rights reserved.</p>
-          <p>Designed & Developed by Manthan and shreya.</p>
+          <p>Designed & Developed by Manthan and Shreya.</p>
         </div>
       </div>
     </footer>

@@ -26,7 +26,7 @@ export function Hero() {
         className="absolute inset-0 z-0"
       >
         <img
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt="Corporate Wellness Retreat"
           className="w-full h-full object-cover"
         />
