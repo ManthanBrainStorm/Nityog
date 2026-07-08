@@ -31,7 +31,27 @@ export function Footer() {
         </div>
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row items-center justify-between text-sm text-primary-foreground/60">
           <p>&copy; 2026 Nityog. All rights reserved.</p>
-          <p>Designed & Developed by Manthan and Shreya.</p>
+          <p>
+            Designed & Developed by{" "}
+            <a
+              href="https://www.linkedin.com/in/manthansomani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors underline underline-offset-4"
+            >
+              Manthan
+            </a>{" "}
+            &{" "}
+            <a
+              href="https://www.linkedin.com/in/shreyamaheshwari07/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition-colors underline underline-offset-4"
+            >
+              Shreya
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>
